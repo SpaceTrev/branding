@@ -6,6 +6,6 @@ export const AppContainer = styled.div`
   background-position: center;
   background-size: cover;
   height: auto;
-  width: 99vw;
+  width: auto;
   background-repeat: repeat;
 `
