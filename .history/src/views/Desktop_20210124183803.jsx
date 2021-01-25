@@ -1,15 +1,19 @@
 import React from 'react'
+import Draggable from 'react-draggable';
 import MDWindow from '../components/MDWindow';
 import { AppContainer } from './styled'
 
 
-const Desktop = () => {
+const Desktop = (children)=> {
     return (
-        <AppContainer>
+    <AppContainer>
+        <Draggable>
             <div>
-              <MDWindow/>
+   <MDWindow/>
             </div>
-        </AppContainer>
+
+        </Draggable>
+    </AppContainer>
     )
 }
 
