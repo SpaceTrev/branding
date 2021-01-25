@@ -97,31 +97,31 @@ export const nameIdeas = `
 function MDWindow() {
   const [brandStoryIsFullScreen, setBrandStoryIsFullScreen] = useState(false)
   const [brandStoryIsVisible, setBrandStoryIsVisible] = useState(true)
-  //   const [nameTypesIsFullScreen, setNameTypesIsFullScreen] = useState(false)
-  //   const [nameTypesIsVisible, setNameTypesIsVisible] = useState(false)
-  //   const [
-  //     meaningBehindNameIsFullScreen,
-  //     setMeaningBehindNameIsFullScreen,
-  //   ] = useState(false)
-  //   const [meaningBehindNameIsVisible, setMeaningBehindNameIsVisible] = useState(
-  //     false
-  //   )
-  //   const [
-  //     streamOfConsciousnessIsFullScreen,
-  //     setStreamOfConsciousnessIsFullScreen,
-  //   ] = useState(false)
-  //   const [
-  //     streamOfConsciousnessIsVisible,
-  //     setStreamOfConsciousnessIsVisible,
-  //   ] = useState(false)
+  const [nameTypesIsFullScreen, setNameTypesIsFullScreen] = useState(false)
+  const [nameTypesIsVisible, setNameTypesIsVisible] = useState(false)
+  const [
+    meaningBehindNameIsFullScreen,
+    setMeaningBehindNameIsFullScreen,
+  ] = useState(false)
+  const [meaningBehindNameIsVisible, setMeaningBehindNameIsVisible] = useState(
+    false
+  )
+  const [
+    streamOfConsciousnessIsFullScreen,
+    setStreamOfConsciousnessIsFullScreen,
+  ] = useState(false)
+  const [
+    streamOfConsciousnessIsVisible,
+    setStreamOfConsciousnessIsVisible,
+  ] = useState(false)
 
-  //   const [culturalIconsIsFullScreen, setCulturalIconsIsFullScreen] = useState(
-  //     false
-  //   )
-  //   const [culturalIconsIsVisible, setCulturalIconsIsVisible] = useState(false)
+  const [culturalIconsIsFullScreen, setCulturalIconsIsFullScreen] = useState(
+    false
+  )
+  const [culturalIconsIsVisible, setCulturalIconsIsVisible] = useState(false)
 
-  //   const [nameIdeasIsFullScreen, setNameIdeasIsFullScreen] = useState(false)
-  //   const [nameIdeasIsVisible, setNameIdeasIsVisible] = useState(false)
+  const [nameIdeasIsFullScreen, setNameIdeasIsFullScreen] = useState(false)
+  const [nameIdeasIsVisible, setNameIdeasIsVisible] = useState(false)
   return (
     <>
       <Draggable>
