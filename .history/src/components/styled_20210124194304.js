@@ -8,5 +8,5 @@ export const FlexRow = styled.div`
   display: flex;
   flex-direction: row;
   justify-content: space-between;
-  margin: 40px 0;
+  padding: 40px 0;
 `

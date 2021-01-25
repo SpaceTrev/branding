@@ -72,7 +72,6 @@ function MDWindow() {
                 </Window>
               </div>
             </Draggable>
-            <div style={{ height: "20px" }} />
             <Draggable>
               <div>
                 <Window
@@ -106,7 +105,7 @@ function MDWindow() {
                   hidden={!brandStoryIsVisible}
                   chrome
                   height="auto"
-                  width="500px"
+                  width="400px"
                   padding="10px"
                 >
                   <TitleBar
@@ -124,7 +123,7 @@ function MDWindow() {
                 </Window>
               </div>
             </Draggable>
-            <div style={{ height: "20px" }} />
+
             <Draggable>
               <div>
                 <Window
@@ -212,7 +211,7 @@ function MDWindow() {
                 hidden={!brandStoryIsVisible}
                 chrome
                 height="auto"
-                width="600px"
+                width="550px"
                 padding="10px"
               >
                 <TitleBar

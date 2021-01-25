@@ -72,7 +72,6 @@ function MDWindow() {
                 </Window>
               </div>
             </Draggable>
-            <div style={{ height: "20px" }} />
             <Draggable>
               <div>
                 <Window
@@ -106,7 +105,7 @@ function MDWindow() {
                   hidden={!brandStoryIsVisible}
                   chrome
                   height="auto"
-                  width="500px"
+                  width="400px"
                   padding="10px"
                 >
                   <TitleBar
@@ -124,7 +123,7 @@ function MDWindow() {
                 </Window>
               </div>
             </Draggable>
-            <div style={{ height: "20px" }} />
+
             <Draggable>
               <div>
                 <Window
@@ -157,6 +156,33 @@ function MDWindow() {
                 hidden={!brandStoryIsVisible}
                 chrome
                 height="auto"
+                width="600px"
+                padding="10px"
+              >
+                <TitleBar
+                  isFullscreen={brandStoryIsFullScreen}
+                  onCloseClick={() => console.log("Close window")}
+                  onMinimizeClick={() => setBrandStoryIsVisible(true)}
+                  onMaximizeClick={() => setBrandStoryIsFullScreen(true)}
+                  onResizeClick={() => setBrandStoryIsFullScreen(true)}
+                  title="Meaning Behind Name"
+                  controls
+                />
+                <FlexColumn>
+                  <ReactMarkdown plugins={[gfm]} children={meaningBehindName} />
+                </FlexColumn>
+              </Window>
+            </div>
+          </Draggable>
+        </FlexRow>
+
+        <FlexRow>
+          <Draggable>
+            <div>
+              <Window
+                hidden={!brandStoryIsVisible}
+                chrome
+                height="auto"
                 width="550px"
                 padding="10px"
               >
@@ -178,33 +204,6 @@ function MDWindow() {
               </Window>
             </div>
           </Draggable>
-        </FlexRow>
-
-        <FlexRow>
-          <Draggable>
-            <div>
-              <Window
-                hidden={!brandStoryIsVisible}
-                chrome
-                height="auto"
-                width="700px"
-                padding="10px"
-              >
-                <TitleBar
-                  isFullscreen={brandStoryIsFullScreen}
-                  onCloseClick={() => console.log("Close window")}
-                  onMinimizeClick={() => setBrandStoryIsVisible(true)}
-                  onMaximizeClick={() => setBrandStoryIsFullScreen(true)}
-                  onResizeClick={() => setBrandStoryIsFullScreen(true)}
-                  title="Meaning Behind Name"
-                  controls
-                />
-                <FlexColumn>
-                  <ReactMarkdown plugins={[gfm]} children={meaningBehindName} />
-                </FlexColumn>
-              </Window>
-            </div>
-          </Draggable>
 
           <Draggable>
             <div>
@@ -212,7 +211,7 @@ function MDWindow() {
                 hidden={!brandStoryIsVisible}
                 chrome
                 height="auto"
-                width="600px"
+                width="400px"
                 padding="10px"
               >
                 <TitleBar

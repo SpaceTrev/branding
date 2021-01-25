@@ -72,7 +72,6 @@ function MDWindow() {
                 </Window>
               </div>
             </Draggable>
-            <div style={{ height: "20px" }} />
             <Draggable>
               <div>
                 <Window
@@ -106,7 +105,7 @@ function MDWindow() {
                   hidden={!brandStoryIsVisible}
                   chrome
                   height="auto"
-                  width="500px"
+                  width="400px"
                   padding="10px"
                 >
                   <TitleBar
@@ -124,32 +123,32 @@ function MDWindow() {
                 </Window>
               </div>
             </Draggable>
-            <div style={{ height: "20px" }} />
-            <Draggable>
-              <div>
-                <Window
-                  hidden={!brandStoryIsVisible}
-                  chrome
-                  height="auto"
-                  width="500px"
-                  padding="10px"
-                >
-                  <TitleBar
-                    isFullscreen={brandStoryIsFullScreen}
-                    onCloseClick={() => console.log("Close window")}
-                    onMinimizeClick={() => setBrandStoryIsVisible(true)}
-                    onMaximizeClick={() => setBrandStoryIsFullScreen(true)}
-                    onResizeClick={() => setBrandStoryIsFullScreen(true)}
-                    title="Name Types"
-                    controls
-                  />
-                  <FlexColumn>
-                    <ReactMarkdown plugins={[gfm]} children={nameTypes} />
-                  </FlexColumn>
-                </Window>
-              </div>
-            </Draggable>
           </div>
+
+          <Draggable>
+            <div>
+              <Window
+                hidden={!brandStoryIsVisible}
+                chrome
+                height="auto"
+                width="500px"
+                padding="10px"
+              >
+                <TitleBar
+                  isFullscreen={brandStoryIsFullScreen}
+                  onCloseClick={() => console.log("Close window")}
+                  onMinimizeClick={() => setBrandStoryIsVisible(true)}
+                  onMaximizeClick={() => setBrandStoryIsFullScreen(true)}
+                  onResizeClick={() => setBrandStoryIsFullScreen(true)}
+                  title="Name Types"
+                  controls
+                />
+                <FlexColumn>
+                  <ReactMarkdown plugins={[gfm]} children={nameTypes} />
+                </FlexColumn>
+              </Window>
+            </div>
+          </Draggable>
 
           <Draggable>
             <div>

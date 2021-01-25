@@ -5,7 +5,9 @@ import { AppContainer } from "./styled"
 const Desktop = () => {
   return (
     <AppContainer>
-      <MDWindow />
+      <div>
+        <MDWindow />
+      </div>
     </AppContainer>
   )
 }
