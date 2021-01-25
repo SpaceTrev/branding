@@ -6,6 +6,5 @@ export const FlexColumn = styled.div`
 `
 export const FlexRow = styled.div`
   display: flex;
-  flex-direction: row;
-  justify-content: space-between;
+  flex-direction: column;
 `

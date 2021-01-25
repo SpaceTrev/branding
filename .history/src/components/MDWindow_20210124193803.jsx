@@ -120,85 +120,80 @@ function MDWindow() {
           </div>
         </Draggable>
       </FlexRow>
-      <div style={{ height: "40px" }} />
-      <FlexRow>
-        <Draggable>
-          <div>
-            <Window
-              hidden={!brandStoryIsVisible}
-              chrome
-              height="auto"
-              width="600px"
-              padding="10px"
-            >
-              <TitleBar
-                isFullscreen={brandStoryIsFullScreen}
-                onCloseClick={() => console.log("Close window")}
-                onMinimizeClick={() => setBrandStoryIsVisible(true)}
-                onMaximizeClick={() => setBrandStoryIsFullScreen(true)}
-                onResizeClick={() => setBrandStoryIsFullScreen(true)}
-                title="Stream of Consciousness"
-                controls
-              />
-              <FlexColumn>
-                <ReactMarkdown
-                  plugins={[gfm]}
-                  children={streamOfConsciousness}
-                />
-              </FlexColumn>
-            </Window>
-          </div>
-        </Draggable>
 
-        <Draggable>
-          <div>
-            <Window
-              hidden={!brandStoryIsVisible}
-              chrome
-              height="auto"
-              width="400px"
-              padding="10px"
-            >
-              <TitleBar
-                isFullscreen={brandStoryIsFullScreen}
-                onCloseClick={() => console.log("Close window")}
-                onMinimizeClick={() => setBrandStoryIsVisible(true)}
-                onMaximizeClick={() => setBrandStoryIsFullScreen(true)}
-                onResizeClick={() => setBrandStoryIsFullScreen(true)}
-                title="Cultural Icons"
-                controls
-              />
-              <FlexColumn>
-                <ReactMarkdown plugins={[gfm]} children={culturalIcons} />
-              </FlexColumn>
-            </Window>
-          </div>
-        </Draggable>
-        <Draggable>
-          <div>
-            <Window
-              hidden={!brandStoryIsVisible}
-              chrome
-              height="auto"
-              width="400px"
-              padding="10px"
-            >
-              <TitleBar
-                isFullscreen={brandStoryIsFullScreen}
-                onCloseClick={() => console.log("Close window")}
-                onMinimizeClick={() => setBrandStoryIsVisible(true)}
-                onMaximizeClick={() => setBrandStoryIsFullScreen(true)}
-                onResizeClick={() => setBrandStoryIsFullScreen(true)}
-                title="Name Ideas"
-                controls
-              />
-              <FlexColumn>
-                <ReactMarkdown plugins={[gfm]} children={nameIdeas} />
-              </FlexColumn>
-            </Window>
-          </div>
-        </Draggable>
-      </FlexRow>
+      <Draggable>
+        <div>
+          <Window
+            hidden={!brandStoryIsVisible}
+            chrome
+            height="auto"
+            width="600px"
+            padding="10px"
+          >
+            <TitleBar
+              isFullscreen={brandStoryIsFullScreen}
+              onCloseClick={() => console.log("Close window")}
+              onMinimizeClick={() => setBrandStoryIsVisible(true)}
+              onMaximizeClick={() => setBrandStoryIsFullScreen(true)}
+              onResizeClick={() => setBrandStoryIsFullScreen(true)}
+              title="Stream of Consciousness"
+              controls
+            />
+            <FlexColumn>
+              <ReactMarkdown plugins={[gfm]} children={streamOfConsciousness} />
+            </FlexColumn>
+          </Window>
+        </div>
+      </Draggable>
+
+      <Draggable>
+        <div>
+          <Window
+            hidden={!brandStoryIsVisible}
+            chrome
+            height="auto"
+            width="400px"
+            padding="10px"
+          >
+            <TitleBar
+              isFullscreen={brandStoryIsFullScreen}
+              onCloseClick={() => console.log("Close window")}
+              onMinimizeClick={() => setBrandStoryIsVisible(true)}
+              onMaximizeClick={() => setBrandStoryIsFullScreen(true)}
+              onResizeClick={() => setBrandStoryIsFullScreen(true)}
+              title="Cultural Icons"
+              controls
+            />
+            <FlexColumn>
+              <ReactMarkdown plugins={[gfm]} children={culturalIcons} />
+            </FlexColumn>
+          </Window>
+        </div>
+      </Draggable>
+      <Draggable>
+        <div>
+          <Window
+            hidden={!brandStoryIsVisible}
+            chrome
+            height="auto"
+            width="400px"
+            padding="10px"
+          >
+            <TitleBar
+              isFullscreen={brandStoryIsFullScreen}
+              onCloseClick={() => console.log("Close window")}
+              onMinimizeClick={() => setBrandStoryIsVisible(true)}
+              onMaximizeClick={() => setBrandStoryIsFullScreen(true)}
+              onResizeClick={() => setBrandStoryIsFullScreen(true)}
+              title="Name Ideas"
+              controls
+            />
+            <FlexColumn>
+              <ReactMarkdown plugins={[gfm]} children={nameIdeas} />
+            </FlexColumn>
+          </Window>
+        </div>
+      </Draggable>
     </>
   )
 }

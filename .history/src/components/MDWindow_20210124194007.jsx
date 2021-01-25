@@ -120,7 +120,7 @@ function MDWindow() {
           </div>
         </Draggable>
       </FlexRow>
-      <div style={{ height: "40px" }} />
+      <div style={{height: '20px'}/}>
       <FlexRow>
         <Draggable>
           <div>
